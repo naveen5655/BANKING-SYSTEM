@@ -1,0 +1,39 @@
+ ## PYTHON, DOCKER AND DJANGO SETUP ON CLOUD9 IN AWS, SHORT VERSION
+1 Create a Cloud9 environment (or open an existing one) with Secure Shell (SSH) connection
+option
+2 Create a folder called projects
+3 Change directory into projects using your terminal
+4 Type "docker network create donut-net" (only the first time you use docker in this Cloud9
+environment)
+5 Type:
+docker run --rm --net donut-net -p 8080:8080 -v "`pwd`":"`pwd`" -w "`pwd`" -ti python bash
+6 Type: pip install virtualenv
+7 Type: python -m venv ./venv
+8 Type: ". venv/bin/activate" #notice the space after the .
+9 Type: pip install Django
+10 Type: django-admin startproject donutwebsite
+11 Type: cd donutwebsite
+12 Type: python manage.py migrate
+13 Type: python manage.py createsuperuser
+14 Type: chmod -R a+w ../donutwebsite
+15 Change projects/donutwebsite/donutwebsite/setting.py on line 28 to allow all hosts ['*'] (save
+file)
+16 Type: python manage.py runserver 0.0.0.0:8080
+17 Click on the website link for Django you see in Cloud9
+Stopping work:
+Type Ctl-C in terminal window to stop server
+Type deactivate
+Type exit
+C. RESUMING WORK IN YOUR CLOUD 9 ENVIRONMENT
+Log back into your canvas account
+Go to Modules, go to the Learner Lab link and click the start lab button
+Click on the Green AWS link button to open your free AWS account
+Click on Cloud9 on the dashboard
+Click Open on the Environments page for your Cloud9 environment
+Type: cd projects
+Type: docker run --rm --net donut-net -p 8080:8080 -v "`pwd`":"`pwd`" -w "`pwd`" -ti python
+bash
+Type: . venv/bin/activate
+If you wanted to start your django app again, an example would be:
+Type: cd donutwebsite
+Type: python manage.py runserver 0.0.0.0:8080
