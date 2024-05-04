@@ -1,4 +1,5 @@
  ## PYTHON, DOCKER AND DJANGO SETUP ON CLOUD9 IN AWS, SHORT VERSION
+- create linux 2 with ssh connection.
 1 Create a Cloud9 environment (or open an existing one) with Secure Shell (SSH) connection
 option
 2 Create a folder called projects
