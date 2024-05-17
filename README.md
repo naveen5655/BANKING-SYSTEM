@@ -1,5 +1,5 @@
 # BANKING SYSTEM
-- Build a banking system website using Django, MySQL and BootStrap
+- Build a banking system website using Framework and PostgreSQL
 - Deployed this project in AWS using EC2 with providing a domain name 
 
 ## Create an ec2 with elastic IP address
