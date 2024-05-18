@@ -1,5 +1,5 @@
 # BANKING SYSTEM
-- Developed a banking system using Django Framework and used PostgreSQL database.
+- Developed a banking system using Django Framework and used MySQL database.
 - Deployed this project in AWS using EC2 with providing a domain name 
 
 ## Create an ec2 with elastic IP address
