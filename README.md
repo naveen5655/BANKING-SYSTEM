@@ -1,6 +1,6 @@
 # BANKING SYSTEM
 - Developed a banking system using Django Framework and used MySQL database.
-- Deployed this project in AWS using EC2 with providing a domain name 
+- Deployed this project in AWS using EC2 with providing a domain name.
 
 ## Create an ec2 with elastic IP address
 ![image](https://user-images.githubusercontent.com/89301294/208351277-f8304f58-4069-437d-aba4-10bad6b0a89e.png)
