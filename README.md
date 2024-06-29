@@ -24,6 +24,6 @@
 ![image](https://user-images.githubusercontent.com/89301294/208351690-08c18673-245c-441d-8f18-3f1a8720e912.png)
 
 
-## Thank you for visiting my repository
+## Thank you for visiting my repository.
 
 
